@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SymbolEditor.Sil")]
+[assembly: AssemblyTitle("SymbolEditor.Web")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("SymbolEditor.Sil")]
+[assembly: AssemblyProduct("SymbolEditor.Web")]
 [assembly: AssemblyCopyright("Copyright ©  2012")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("74d4c46d-f6ac-43fc-ae33-809217ae0479")]
+[assembly: Guid("e6951d91-c231-466b-8206-f184066158d3")]
 
 // Version information for an assembly consists of the following four values:
 //

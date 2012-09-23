@@ -1,30 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymbolEditor.Sil", "SymbolEditor.Sil\SymbolEditor.Sil.csproj", "{74D4C46D-F6AC-43FC-AE33-809217AE0479}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymbolEditor", "SymbolEditor\SymbolEditor.csproj", "{F03883BA-26D9-47FC-87B8-E58B0E1FECE5}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "SymbolEditor.Sil.Web", "http://localhost:3355", "{BA7F9246-81D4-42EA-885F-BD00D28C1ABF}"
-	ProjectSection(WebsiteProperties) = preProject
-		UseIISExpress = "true"
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_3355"
-		Debug.AspNetCompiler.PhysicalPath = "SymbolEditor.Sil.Web\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3355\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_3355"
-		Release.AspNetCompiler.PhysicalPath = "SymbolEditor.Sil.Web\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_3355\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		SlnRelativePath = "SymbolEditor.Sil.Web\"
-		DefaultWebSiteLanguage = "Visual C#"
-		ProjOutputReferences = "{74D4C46D-F6AC-43FC-AE33-809217AE0479}|ClientBin|false;"
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymbolEditor.Web", "SymbolEditor.Web\SymbolEditor.Web.csproj", "{A6C176FD-B23A-4882-8C95-2B53DE4E752F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{74D4C46D-F6AC-43FC-AE33-809217AE0479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74D4C46D-F6AC-43FC-AE33-809217AE0479}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74D4C46D-F6AC-43FC-AE33-809217AE0479}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74D4C46D-F6AC-43FC-AE33-809217AE0479}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BA7F9246-81D4-42EA-885F-BD00D28C1ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA7F9246-81D4-42EA-885F-BD00D28C1ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA7F9246-81D4-42EA-885F-BD00D28C1ABF}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA7F9246-81D4-42EA-885F-BD00D28C1ABF}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{F03883BA-26D9-47FC-87B8-E58B0E1FECE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F03883BA-26D9-47FC-87B8-E58B0E1FECE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F03883BA-26D9-47FC-87B8-E58B0E1FECE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F03883BA-26D9-47FC-87B8-E58B0E1FECE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A6C176FD-B23A-4882-8C95-2B53DE4E752F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6C176FD-B23A-4882-8C95-2B53DE4E752F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6C176FD-B23A-4882-8C95-2B53DE4E752F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6C176FD-B23A-4882-8C95-2B53DE4E752F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

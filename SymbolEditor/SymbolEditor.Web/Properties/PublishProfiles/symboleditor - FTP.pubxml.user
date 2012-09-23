@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAJlPir2FrKEafx753lOmsJwAAAAACAAAAAAAQZgAAAAEAACAAAADIuYMPvRuwB7Yh947RP7LJ8DZS4iGbzaAz9v0Mx6mMGgAAAAAOgAAAAAIAACAAAAAhipXbACiAWE7pRmVmB+0yeaiS1prhTHkJxQHiZ1vEfoAAAACVpIJ4RC2Q/tbUD/ov7MJRtWvS7Tiy3+uEW4Gotv7FSSe78PnRgYmEvagnsxUmu9ITuBQM/0sA5i0tI5X2qIq1lnX+YLWFdjR7LovjTEFjttEtOUHF+Fwaf3O6D3VSDfPg+ECtd6R6V3xn4+ZLVhYkH8oyREg+i7fvvHY9ETUIo0AAAACETOTfjYeKWlM4Luws/kS8ntq9NN3hsiLF6Y2D01xOQLe06Qk202x0gEZDnvexf3NfQcScwhd2lanuzBhgthF1</EncryptedPassword>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/SymbolEditor.Web.dll">
+      <publishTime>09/23/2012 13:43:18</publishTime>
+    </File>
+    <File Include="ClientBin/SymbolEditor.xap">
+      <publishTime>09/23/2012 13:24:53</publishTime>
+    </File>
+    <File Include="Silverlight.js">
+      <publishTime>09/23/2012 13:23:51</publishTime>
+    </File>
+    <File Include="SymbolEditorTestPage.aspx">
+      <publishTime>09/23/2012 13:23:51</publishTime>
+    </File>
+    <File Include="SymbolEditorTestPage.html">
+      <publishTime>09/23/2012 13:23:51</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/23/2012 13:43:27</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
