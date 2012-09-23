@@ -14,7 +14,7 @@
     <AssemblyName>SymbolEditor.Sil.Web</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
-    <SilverlightApplicationList>{0227ABCE-08B8-4AFD-B2BD-FD2522BEDB29}|..\SymbolEditor.Sil\SymbolEditor.Sil.csproj|ClientBin|False</SilverlightApplicationList>
+    <SilverlightApplicationList>{0227ABCE-08B8-4AFD-B2BD-FD2522BEDB29}|..\SymbolEditor.Sil\SymbolEditor.Sil.csproj|ClientBin|False,{0DC4BD26-5C89-4F76-9D36-8F5A40F9115F}|..\SymbolEditor.Silverlight\SymbolEditor.Silverlight.csproj|ClientBin|False</SilverlightApplicationList>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,9 +53,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientBin\SymbolEditor.Sil.xap" />
+    <Content Include="ClientBin\SymbolEditor.Silverlight.xap" />
     <Content Include="Silverlight.js" />
     <Content Include="index.aspx" />
     <Content Include="index.html" />
+    <Content Include="SymbolEditor.SilverlightTestPage.aspx" />
+    <Content Include="SymbolEditor.SilverlightTestPage.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

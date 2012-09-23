@@ -4,7 +4,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <StartPageUrl>index.aspx</StartPageUrl>
+          <StartPageUrl>SymbolEditor.SilverlightTestPage.aspx</StartPageUrl>
           <StartAction>SpecificPage</StartAction>
           <AspNetDebugging>True</AspNetDebugging>
           <SilverlightDebugging>True</SilverlightDebugging>
@@ -22,6 +22,7 @@
           <AlwaysStartWebServerOnDebug>True</AlwaysStartWebServerOnDebug>
           <ProjectOutputReferences>
             <Ref Project="{0227ABCE-08B8-4AFD-B2BD-FD2522BEDB29}" Folder="ClientBin">SymbolEditor.Sil.xap</Ref>
+            <Ref Project="{0DC4BD26-5C89-4F76-9D36-8F5A40F9115F}" Folder="ClientBin">SymbolEditor.Silverlight.xap</Ref>
           </ProjectOutputReferences>
         </WebProjectProperties>
       </FlavorProperties>
