@@ -111,6 +111,9 @@
     <Compile Include="Views\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\Color.xaml.cs">
+      <DependentUpon>Color.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ErrorWindow.xaml.cs">
       <DependentUpon>ErrorWindow.xaml</DependentUpon>
     </Compile>
@@ -118,6 +121,24 @@
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\PictureFillSymbol.xaml.cs">
+      <DependentUpon>PictureFillSymbol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PictureMarkerSymbol.xaml.cs">
+      <DependentUpon>PictureMarkerSymbol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SimpleFillSymbol.xaml.cs">
+      <DependentUpon>SimpleFillSymbol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SimpleLineSymbol.xaml.cs">
+      <DependentUpon>SimpleLineSymbol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SimpleMarkerSymbol.xaml.cs">
+      <DependentUpon>SimpleMarkerSymbol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TextSymbol.xaml.cs">
+      <DependentUpon>TextSymbol.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -175,6 +196,34 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="readme.txt" />
+    <Page Include="Views\TextSymbol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PictureFillSymbol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PictureMarkerSymbol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SimpleFillSymbol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SimpleLineSymbol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SimpleMarkerSymbol.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Color.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

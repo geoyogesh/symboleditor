@@ -19,13 +19,20 @@
             <Border x:Name="BrandingBorder" Style="{StaticResource NavBrandingBorderStyle}">
                 <StackPanel x:Name="BrandingStackPanel" Style="{StaticResource BrandingStackPanelStyle}" >
                     <ContentControl Style="{StaticResource LogoIcon}" />
-                    <TextBlock x:Name="ApplicationNameTextBlock" Style="{StaticResource ApplicationNameStyle}" Text="Application Name" />
+                    <TextBlock x:Name="ApplicationNameTextBlock" Style="{StaticResource ApplicationNameStyle}" Text="Symbol Editor" />
                 </StackPanel>
             </Border>
 
             <Border x:Name="LinksBorder" Style="{StaticResource NavLinksBorderStyle}">
                 <StackPanel x:Name="LinksStackPanel" Style="{StaticResource LinksStackPanelStyle}">
                     <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="Home" TargetName="ContentFrame" Content="home" />
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="Color" TargetName="ContentFrame" Content="Color" />
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="SimpleMarkerSymbol" TargetName="ContentFrame" Content="SMS" />
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="SimpleLineSymbol" TargetName="ContentFrame" Content="SLS" />
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="SimpleFillSymbol" TargetName="ContentFrame" Content="SFS" />
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="PictureMarkerSymbol" TargetName="ContentFrame" Content="PMS" />
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="PictureFillSymbol" TargetName="ContentFrame" Content="PFS" />
+                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="TextSymbol" TargetName="ContentFrame" Content="TS" />
                     <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="About" TargetName="ContentFrame" Content="about" />
                 </StackPanel>
             </Border>
