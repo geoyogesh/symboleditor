@@ -9,6 +9,33 @@
 
     <Grid x:Name="LayoutRoot">
         <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="250" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Grid.Row="0" Grid.Column="0" Text="Type"/>
+                    <TextBlock Grid.Row="1" Grid.Column="0"  Text="Style"/>
+                    <TextBlock Grid.Row="2" Grid.Column="0"  Text="Color"/>
+                    <TextBlock Grid.Row="3" Grid.Column="0"  Text="Outline"/>
+                    <TextBox Grid.Row="0" Grid.Column="1"/>
+                    <TextBox Grid.Row="1" Grid.Column="1"/>
+                    <TextBox Grid.Row="2" Grid.Column="1"/>
+                    <TextBox Grid.Row="3" Grid.Column="1"/>
+                </Grid>
+                <TextBox Grid.Column="1" Text="Sample text"/>
+            </Grid>
         </ScrollViewer>
     </Grid>
 
