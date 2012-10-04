@@ -62,6 +62,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ColorPicker">
+      <HintPath>..\packages\ColorPickr.1.0.0\lib\sl40\ColorPicker.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Runtime.Serialization" />
@@ -105,14 +108,13 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Tasks\EncodeImage.cs" />
+    <Compile Include="Tasks\Extensions.cs" />
     <Compile Include="Views\ChildWindow1.xaml.cs">
       <DependentUpon>ChildWindow1.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\About.xaml.cs">
       <DependentUpon>About.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Color.xaml.cs">
-      <DependentUpon>Color.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ErrorWindow.xaml.cs">
       <DependentUpon>ErrorWindow.xaml</DependentUpon>
@@ -138,6 +140,15 @@
     </Compile>
     <Compile Include="Views\TextSymbol.xaml.cs">
       <DependentUpon>TextSymbol.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\FontWindow.xaml.cs">
+      <DependentUpon>FontWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\OutlineWindow.xaml.cs">
+      <DependentUpon>OutlineWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Windows\SelectColorWindow.xaml.cs">
+      <DependentUpon>SelectColorWindow.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -195,7 +206,20 @@
     <None Include="Properties\AppManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Assets\Images\Pushpin.png" />
     <Content Include="readme.txt" />
+    <Page Include="Views\Windows\FontWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Windows\OutlineWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\Windows\SelectColorWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Views\TextSymbol.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -220,10 +244,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Color.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\GISServer.Core\GISServer.Core.csproj">
@@ -233,6 +253,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entities\" />
+    <Folder Include="Views\UserControls\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

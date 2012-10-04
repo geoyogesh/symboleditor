@@ -4,14 +4,14 @@ using Newtonsoft.Json;
 
 namespace GISServer.Core.Client.Symbols
 {
-    public class SimpleMarkerSymbol:Symbol
+    public class SimpleMarkerSymbol : Symbol
     {
         [JsonProperty("type")]
         public string Type { get; set; }
         [JsonProperty("style")]
         public String Style { get; set; }
         [JsonProperty("color")]
-        public List<int> Color { get; set; }
+        public List<byte> Color { get; set; }
         [JsonProperty("size")]
         public double Size { get; set; }
         [JsonProperty("angle")]
@@ -28,25 +28,25 @@ namespace GISServer.Core.Client.Symbols
         public Outline()
         {
         }
-        public Outline(int width,List<int> color)
+        public Outline(double width, List<byte> color)
         {
             this.Color = color;
             this.Width = width;
         }
 
-        public Outline(int width, params int[] color)
+        public Outline(double width, params byte[] color)
         {
-            var colorlist = new List<int>();
+            var colorarray = new List<byte>();
             foreach (var item in color)
             {
-                colorlist.Add(item);
+                colorarray.Add(item);
             }
-            this.Color = colorlist;
+            this.Color = colorarray;
             this.Width = width;
         }
         [JsonProperty("color")]
-        public List<int> Color { get; set; }
+        public List<byte> Color { get; set; }
         [JsonProperty("width")]
-        public int Width { get; set; }
+        public double Width { get; set; }
     }
 }

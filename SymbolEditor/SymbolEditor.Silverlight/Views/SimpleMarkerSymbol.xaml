@@ -4,14 +4,14 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
-    d:DesignWidth="640" d:DesignHeight="300" mc:Ignorable="d"
+    d:DesignWidth="640" d:DesignHeight="600" mc:Ignorable="d"
     Style="{StaticResource PageStyle}">
 
     <Grid x:Name="LayoutRoot">
         <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="250" />
+                    <ColumnDefinition Width="500" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Row="0">
@@ -26,7 +26,7 @@
                         <RowDefinition Height="50"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="200"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Grid.Row="0" Grid.Column="0" Text="Type"/>
@@ -37,16 +37,32 @@
                     <TextBlock Grid.Row="5" Grid.Column="0"  Text="Xoffset"/>
                     <TextBlock Grid.Row="6" Grid.Column="0"  Text="Yoffset"/>
                     <TextBlock Grid.Row="7" Grid.Column="0"  Text="Outline"/>
-                    <TextBox Grid.Row="0" Grid.Column="1"/>
-                    <TextBox Grid.Row="1" Grid.Column="1"/>
-                    <TextBox Grid.Row="2" Grid.Column="1"/>
-                    <TextBox Grid.Row="3" Grid.Column="1"/>
-                    <TextBox Grid.Row="4" Grid.Column="1"/>
-                    <TextBox Grid.Row="5" Grid.Column="1"/>
-                    <TextBox Grid.Row="6" Grid.Column="1"/>
-                    <TextBox Grid.Row="7" Grid.Column="1"/>
+                    <TextBox x:Name="txttype" Text="esriSMS" Grid.Row="0" Grid.Column="1" TextChanged="txttype_TextChanged" />
+                    <ComboBox Grid.Row="1" x:Name="cbxstyle" Grid.Column="1" SelectionChanged="cbxstyle_SelectionChanged">
+                        <ComboBoxItem Content="esriSMSCircle"/>
+                        <ComboBoxItem Content="esriSMSCross" />
+                        <ComboBoxItem Content="esriSMSDiamond" />
+                        <ComboBoxItem Content="esriSMSSquare" />
+                        <ComboBoxItem Content="esriSMSX" />
+                    </ComboBox>
+                    <Rectangle x:Name="reccolor" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Hand" Grid.Row="2" Grid.Column="1" MouseLeftButtonDown="reccolor_MouseLeftButtonDown">
+                        <Rectangle.Fill>
+                            <SolidColorBrush Color="AliceBlue" />
+                        </Rectangle.Fill>
+                    </Rectangle>
+                    <TextBox x:Name="txtsize" Grid.Row="3" Grid.Column="1" TextChanged="txtsize_TextChanged" />
+                    <TextBox x:Name="txtangle" Grid.Row="4" Grid.Column="1" TextChanged="txtangle_TextChanged" />
+                    <TextBox x:Name="txtxoffset" Grid.Row="5" Grid.Column="1" TextChanged="txtxoffset_TextChanged" />
+                    <TextBox x:Name="txtyoffset" Grid.Row="6" Grid.Column="1" TextChanged="txtyoffset_TextChanged" />
+                    <Border x:Name="boroutline" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="White" BorderThickness="6" Cursor="Hand"  Grid.Row="7" Grid.Column="1" MouseLeftButtonDown="boroutline_MouseLeftButtonDown">
+                        <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Hand">
+                            <Rectangle.Fill>
+                                <SolidColorBrush Color="Gray" />
+                            </Rectangle.Fill>
+                        </Rectangle>
+                    </Border>
                 </Grid>
-                <TextBox Grid.Column="1" Text="Sample text"/>
+                <TextBox x:Name="txtjson" Grid.Column="1" Text="Sample text" TextWrapping="Wrap" Width="500" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalScrollBarVisibility="Auto"/>
             </Grid>
         </ScrollViewer>
     </Grid>

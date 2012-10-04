@@ -68,7 +68,7 @@
     <Compile Include="Client\Utilities\Serializer.cs" />
     <Compile Include="Error.cs" />
     <Compile Include="Exception.cs" />
-    <Compile Include="Font.cs" />
+    <Compile Include="Client\Symbols\Font.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

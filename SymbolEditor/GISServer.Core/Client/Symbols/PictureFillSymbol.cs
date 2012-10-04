@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 namespace GISServer.Core.Client.Symbols
 {
-    public class PictureFillSymbol
+    public class PictureFillSymbol : Symbol
     {
         [JsonProperty("type")]
         public string Type { get; set; }
@@ -12,11 +12,11 @@ namespace GISServer.Core.Client.Symbols
         [JsonProperty("imageData")]
         public string ImageData { get; set; }
         [JsonProperty("contentType")]
-        public string contentType { get; set; }
+        public string ContentType { get; set; }
         [JsonProperty("outline")]
         public SimpleLineSymbol Outline { get; set; }
         [JsonProperty("color")]
-        public List<int> Color { get; set; }
+        public List<byte> Color { get; set; }
         [JsonProperty("width")]
         public double Width { get; set; }
         [JsonProperty("height")]

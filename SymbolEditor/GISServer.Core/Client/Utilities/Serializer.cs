@@ -3,7 +3,7 @@ using Newtonsoft.Json.Serialization;
 
 namespace GISServer.Core.Client.Utilities
 {
-    internal static class Serializer
+    public static class Serializer
     {
         public static string ToJsonWithoutFormatting(object obj)
         {
@@ -21,7 +21,7 @@ namespace GISServer.Core.Client.Utilities
                 new JsonSerializerSettings
                 {
                     NullValueHandling = NullValueHandling.Ignore,
-                    Formatting=Formatting.None,
+                    Formatting = Formatting.None,
                     ContractResolver = new CamelCasePropertyNamesContractResolver()
                 });
         }

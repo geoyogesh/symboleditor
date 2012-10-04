@@ -26,7 +26,6 @@
             <Border x:Name="LinksBorder" Style="{StaticResource NavLinksBorderStyle}">
                 <StackPanel x:Name="LinksStackPanel" Style="{StaticResource LinksStackPanelStyle}">
                     <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="Home" TargetName="ContentFrame" Content="home" />
-                    <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="Color" TargetName="ContentFrame" Content="Color" />
                     <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="SimpleMarkerSymbol" TargetName="ContentFrame" Content="SMS" />
                     <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="SimpleLineSymbol" TargetName="ContentFrame" Content="SLS" />
                     <HyperlinkButton Style="{StaticResource LinkStyle}" NavigateUri="SimpleFillSymbol" TargetName="ContentFrame" Content="SFS" />

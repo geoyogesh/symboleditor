@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 namespace GISServer.Core.Client.Symbols
 {
-    public class PictureMarkerSymbol:Symbol
+    public class PictureMarkerSymbol : Symbol
     {
         [JsonProperty("type")]
         public string Type { get; set; }
@@ -14,7 +14,7 @@ namespace GISServer.Core.Client.Symbols
         [JsonProperty("contentType")]
         public string ContentType { get; set; }
         [JsonProperty("color")]
-        public List<int> Color { get; set; }
+        public List<byte> Color { get; set; }
         [JsonProperty("width")]
         public double Width { get; set; }
         [JsonProperty("height")]

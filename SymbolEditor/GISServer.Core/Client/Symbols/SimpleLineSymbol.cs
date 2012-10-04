@@ -4,15 +4,15 @@ using Newtonsoft.Json;
 
 namespace GISServer.Core.Client.Symbols
 {
-    public class SimpleLineSymbol:Symbol
+    public class SimpleLineSymbol : Symbol
     {
         [JsonProperty("type")]
         public string Type { get; set; }
         [JsonProperty("style")]
         public String Style { get; set; }
         [JsonProperty("color")]
-        public List<int> Color { get; set; }
+        public List<byte> Color { get; set; }
         [JsonProperty("width")]
-        public double Width { get; set; }        
+        public double Width { get; set; }
     }
 }

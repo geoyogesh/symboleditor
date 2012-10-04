@@ -11,7 +11,7 @@
         <ScrollViewer x:Name="PageScrollViewer" Style="{StaticResource PageScrollViewerStyle}">
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="250" />
+                    <ColumnDefinition Width="500" />
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
                 <Grid Grid.Row="0">
@@ -29,12 +29,27 @@
                     <TextBlock Grid.Row="1" Grid.Column="0"  Text="Style"/>
                     <TextBlock Grid.Row="2" Grid.Column="0"  Text="Color"/>
                     <TextBlock Grid.Row="3" Grid.Column="0"  Text="Outline"/>
-                    <TextBox Grid.Row="0" Grid.Column="1"/>
-                    <TextBox Grid.Row="1" Grid.Column="1"/>
-                    <TextBox Grid.Row="2" Grid.Column="1"/>
-                    <TextBox Grid.Row="3" Grid.Column="1"/>
+                    <TextBox x:Name="txttype" Grid.Row="0" Grid.Column="1" Text="esriSFS" TextChanged="txttype_TextChanged" />
+                    <ComboBox Grid.Row="1" x:Name="cbxstyle" Grid.Column="1" SelectionChanged="cbxstyle_SelectionChanged">
+                        <ComboBoxItem Content="esriSFSBackwardDiagonal"/>
+                        <ComboBoxItem Content="esriSFSCross" />
+                        <ComboBoxItem Content="esriSFSDiagonalCross" />
+                        <ComboBoxItem Content="esriSFSForwardDiagonal" />
+                        <ComboBoxItem Content="esriSFSHorizontal" />
+                        <ComboBoxItem Content="esriSFSNull" />
+                        <ComboBoxItem Content="esriSFSSolid" />
+                        <ComboBoxItem Content="esriSFSVertical" />
+                    </ComboBox>
+                    <Rectangle x:Name="reccolor" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Hand"  Grid.Row="2" Grid.Column="1" Fill="AliceBlue" MouseLeftButtonDown="reccolor_MouseLeftButtonDown"></Rectangle>
+                    <Border x:Name="boroutline" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" BorderBrush="White" BorderThickness="6" Cursor="Hand"  Grid.Row="3" Grid.Column="1" MouseLeftButtonDown="boroutline_MouseLeftButtonDown">
+                        <Rectangle HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Hand">
+                            <Rectangle.Fill>
+                                <SolidColorBrush Color="Gray" />
+                            </Rectangle.Fill>
+                        </Rectangle>
+                    </Border>
                 </Grid>
-                <TextBox Grid.Column="1" Text="Sample text"/>
+                <TextBox x:Name="txtjson" Grid.Column="1" Text="Sample text" TextWrapping="Wrap" Width="500" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" VerticalScrollBarVisibility="Auto"/>
             </Grid>
         </ScrollViewer>
     </Grid>

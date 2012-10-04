@@ -6,5 +6,10 @@ namespace GISServer.Core.Client.Symbols
     {
         [JsonProperty("type")]
         public string Type { get; set; }
+
+        public string ToJSON()
+        {
+            return GISServer.Core.Client.Utilities.Serializer.ToJson(this);
+        }
     }
 }

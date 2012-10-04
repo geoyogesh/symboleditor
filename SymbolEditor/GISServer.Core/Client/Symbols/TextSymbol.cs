@@ -4,16 +4,16 @@ using Newtonsoft.Json;
 
 namespace GISServer.Core.Client.Symbols
 {
-    public class TextSymbol :Symbol
+    public class TextSymbol : Symbol
     {
         [JsonProperty("type")]
         public string Type { get; set; }
         [JsonProperty("color")]
-        public List<int> Color { get; set; }
+        public List<byte> Color { get; set; }
         [JsonProperty("backgroundColor")]
-        public List<int> BackgroundColor { get; set; }
+        public List<byte> BackgroundColor { get; set; }
         [JsonProperty("borderLineColor")]
-        public List<int> BorderLineColor { get; set; }
+        public List<byte> BorderLineColor { get; set; }
         [JsonProperty("verticalAlignment")]
         public String VerticalAlignment { get; set; }
         [JsonProperty("horizontalAlignment")]
