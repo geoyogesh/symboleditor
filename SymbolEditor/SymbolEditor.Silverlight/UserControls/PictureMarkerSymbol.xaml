@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="SymbolEditor.Silverlight.UserControls.PictureMarkerSymbol"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="600" d:DesignWidth="400">
+    
+    <Grid x:Name="LayoutRoot" Background="White" VerticalAlignment="Top">
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Type"/>
+                <TextBlock Grid.Row="1" Grid.Column="0"  Text="Url"/>
+                <TextBlock Grid.Row="2" Grid.Column="0"  Text="ImageData"/>
+                <TextBlock Grid.Row="3" Grid.Column="0"  Text="ContentType"/>
+                <TextBlock Grid.Row="4" Grid.Column="0"  Text="Color"/>
+                <TextBlock Grid.Row="5" Grid.Column="0"  Text="Width"/>
+                <TextBlock Grid.Row="6" Grid.Column="0"  Text="Height"/>
+                <TextBlock Grid.Row="7" Grid.Column="0"  Text="Angle"/>
+                <TextBlock Grid.Row="8" Grid.Column="0"  Text="Xoffset"/>
+                <TextBlock Grid.Row="9" Grid.Column="0"  Text="Yoffset"/>
+
+
+                <TextBox x:Name="txttype" Grid.Row="0" Grid.Column="1" Text="esriPMS" TextChanged="txttype_TextChanged" />
+                <TextBox x:Name="txturl" Grid.Row="1" Grid.Column="1" TextChanged="txturl_TextChanged" />
+                <Border Grid.Row="2" Grid.Column="1" BorderBrush="Red" BorderThickness="3">
+                    <Image x:Name="imgimagedata" Source="../Assets/Images/Pushpin.png" HorizontalAlignment="Center" VerticalAlignment="Center"  MouseLeftButtonDown="imgimagedata_MouseLeftButtonDown" Cursor="Hand"/>
+                </Border>
+                <!--<TextBox x:Name="txtimagedata" Grid.Row="2" Grid.Column="1" TextChanged="txtimagedata_TextChanged" />-->
+                <TextBox x:Name="txtcontenttype" Text="image/png" Grid.Row="3" Grid.Column="1" TextChanged="txtcontenttype_TextChanged" />
+                <Rectangle x:Name="reccolor" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Cursor="Hand" Grid.Row="4" Grid.Column="1" MouseLeftButtonDown="reccolor_MouseLeftButtonDown">
+                    <Rectangle.Fill>
+                        <SolidColorBrush Color="AliceBlue" />
+                    </Rectangle.Fill>
+                </Rectangle>
+                <TextBox x:Name="txtwidth" Text="10" Grid.Row="5" Grid.Column="1" TextChanged="txtwidth_TextChanged" />
+                <TextBox x:Name="txtheight" Text="10" Grid.Row="6" Grid.Column="1" TextChanged="txtheight_TextChanged" />
+                <TextBox x:Name="txtangle" Text="0" Grid.Row="7" Grid.Column="1" TextChanged="txtangle_TextChanged" />
+                <TextBox x:Name="txtxoffset" Text="0" Grid.Row="8" Grid.Column="1" TextChanged="txtxoffset_TextChanged" />
+                <TextBox x:Name="txtyoffset" Text="0" Grid.Row="9" Grid.Column="1" TextChanged="txtyoffset_TextChanged" />
+            
+           
+    </Grid>
+</UserControl>
