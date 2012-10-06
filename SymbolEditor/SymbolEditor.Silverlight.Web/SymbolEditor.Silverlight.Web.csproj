@@ -54,8 +54,8 @@
   <ItemGroup>
     <Content Include="ClientBin\SymbolEditor.Silverlight.xap" />
     <Content Include="Silverlight.js" />
-    <Content Include="SymbolEditor.SilverlightTestPage.aspx" />
-    <Content Include="SymbolEditor.SilverlightTestPage.html" />
+    <Content Include="index.aspx" />
+    <Content Include="index.html" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
