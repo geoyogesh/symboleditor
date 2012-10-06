@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymbolEditor.Silverlight", "SymbolEditor.Silverlight\SymbolEditor.Silverlight.csproj", "{3593619C-5008-45EB-B146-BEA3D70F52E9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SymbolEditor.Silverlight.Web", "SymbolEditor.Silverlight.Web\SymbolEditor.Silverlight.Web.csproj", "{72FBD50C-2A40-454A-A8C6-0985AF1294B2}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3593619C-5008-45EB-B146-BEA3D70F52E9} = {3593619C-5008-45EB-B146-BEA3D70F52E9}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GISServer.Core", "GISServer.Core\GISServer.Core.csproj", "{E7043214-35C7-4F0B-B598-776F52BB03AC}"
 EndProject
