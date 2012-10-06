@@ -63,7 +63,9 @@
     <Reference Include="ColorPicker">
       <HintPath>..\packages\ColorPickr.1.0.0\lib\sl40\ColorPicker.dll</HintPath>
     </Reference>
-    <Reference Include="ESRI.ArcGIS.Client, Version=3.0.0.388, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL" />
+    <Reference Include="ESRI.ArcGIS.Client, Version=3.0.0.388, Culture=neutral, PublicKeyToken=8fc3cc631e44ad86, processorArchitecture=MSIL">
+      <HintPath>..\packages\MyPackage.1.0.0\lib\ESRI.ArcGIS.Client.dll</HintPath>
+    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="System.Windows" />
     <Reference Include="system" />
